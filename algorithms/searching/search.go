@@ -6,7 +6,7 @@ import (
 
 func BinarySearch(list []int, start, end, key int) bool {
 	fmt.Println(list, start, end, key)
-	if start < 0 || end >= len(list) || start > end {
+	if start > end {
 		fmt.Println("Boundary Condition!")
 		return false
 	}
