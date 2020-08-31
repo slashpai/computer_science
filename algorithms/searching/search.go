@@ -22,3 +22,13 @@ func BinarySearch(list []int, start, end, key int) bool {
 	}
 	return BinarySearch(list, start, end, key)
 }
+
+func LinearSearch(list []int, key int) bool {
+	fmt.Println(list, key)
+	for _, element := range list {
+		if element == key {
+			return true
+		}
+	}
+	return false
+}
